@@ -3,6 +3,12 @@ name: Publish Docs
 on:
   push:
     branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/**"
+      - "templates/**"
+      - "requirements.txt"
+      - ".github/workflows/publish.yml"
   workflow_dispatch:
 
 permissions:
